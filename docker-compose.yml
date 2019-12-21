@@ -1,0 +1,19 @@
+version: "2"
+services:
+  be:
+    build: ./api
+    command: gunicorn -w 4 --bind 0.0.0.0:5000 --log-level=info app:app
+    links:
+      - db
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"
+  db:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d/:ro

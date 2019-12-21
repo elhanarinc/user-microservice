@@ -1,0 +1,11 @@
+MYSQL_HOST = 'db'
+MYSQL_PORT = 3306
+MYSQL_USER = 'root'
+MYSQL_DB = 'user_db'
+MYSQL_PASSWORD = 'root'
+MYSQL_CHARSET = 'utf8'
+
+JWT_SECRET = 'VAutW8kAb4a5Dn2TKwH4YfHKMmgaMrMsZattAEUbS8cUN7v9LL8jCZqGC699ZcqTwrZGLKBYQMcCTD9A3FbgQpezKKKqLvwjdK6u'
+JWT_TTL = 1440  # in minutes (24 hours)
+
+BASE_URL = "http://localhost:5000"
