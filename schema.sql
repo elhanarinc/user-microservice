@@ -1,6 +1,3 @@
-CREATE DATABASE IF NOT EXISTS user_db;
-use user_db;
-
 CREATE TABLE `user` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(180) NOT NULL,
