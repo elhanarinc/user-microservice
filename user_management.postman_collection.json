@@ -64,7 +64,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"username\": \"arincelhan\",\n\t\"email\": \"elhanarinc@gmail.com\",\n\t\"password\": \"arinc456\",\n\t\"name\": \"arinc\",\n\t\"surname\": \"elhan\",\n\t\"age\": 27\n}"
+					"raw": "{\n\t\"username\": \"elhanarinc\",\n\t\"email\": \"elhanarinc@gmail.com\",\n\t\"password\": \"123456\",\n\t\"name\": \"Arinc\",\n\t\"surname\": \"Elhan\",\n\t\"age\": 27\n}"
 				},
 				"url": {
 					"raw": "127.0.0.1:5000/register",
@@ -101,7 +101,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"username\": \"johndoe\",\n\t\"email\": \"johndoe@hotmail.com\",\n\t\"password\": \"john123\",\n\t\"age\": 55\n}"
+					"raw": "{\n\t\"username\": \"55555\",\n\t\"email\": \"jo123e@hotmail.com\",\n\t\"password\": \"john123\",\n\t\"age\": 16\n}"
 				},
 				"url": {
 					"raw": "127.0.0.1:5000/register",
@@ -172,7 +172,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFyaW5jZWxoYW4iLCJlbWFpbCI6ImVsaGFuYXJpbmNAZ21haWwuY29tIiwibmFtZSI6ImFyaW5jIiwic3VybmFtZSI6ImVsaGFuIiwiYWdlIjoyNywidHNfcmVnaXN0cmF0aW9uIjoxNTc2OTMzOTcyLjc5NTQwNDQsImxhc3RfbG9naW5faXAiOiIxOTIuMTY4LjMyLjEiLCJleHAiOjE1NzcwMjAzNzN9.-FLhWUPqNTrhaolpYW2JylhPhqKUbxJAwH2a_0Mcp7Y",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVsaGFuYXJpbmMiLCJlbWFpbCI6ImVsaGFuYXJpbmNAZ21haWwuY29tIiwibmFtZSI6IkFyaW5jIiwic3VybmFtZSI6IkVsaGFuIiwiYWdlIjoyNywidHNfcmVnaXN0cmF0aW9uIjoxNTc3MDI4OTIyLjY3NjUwNjUsImxhc3RfbG9naW5faXAiOiIxOTIuMTY4LjE0NC4xIiwiZXhwIjoxNTc3MTE1MzIyfQ.JMwIFNjJMXuboAtwdmQ3JB1Ip-AIWh5qSetL3FPAgzI",
 						"type": "text"
 					}
 				],
@@ -214,11 +214,11 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFyaW5jZWxoYW4iLCJlbWFpbCI6ImVsaGFuYXJpbmNAZ21haWwuY29tIiwibmFtZSI6ImFyaW5jIiwic3VybmFtZSI6ImVsaGFuIiwiYWdlIjoyNywidHNfcmVnaXN0cmF0aW9uIjoxNTc2OTMzOTczLCJsYXN0X2xvZ2luX2lwIjoiMTkyLjE2OC4zMi4xIiwiZXhwIjoxNTc3MDIwNDQ5fQ.r_8zv-j0S2jmcTu5sGUjsEnuHEq1CYBBju08ZWybpY4"
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVsaGFuYXJpbmMiLCJlbWFpbCI6ImVsaGFuYXJpbmNAZ21haWwuY29tIiwibmFtZSI6IkFyaW5jIiwic3VybmFtZSI6IkVsaGFuIiwiYWdlIjoyNywidHNfcmVnaXN0cmF0aW9uIjoxNTc3MDI4OTIzLCJsYXN0X2xvZ2luX2lwIjoiMTkyLjE2OC4xNDQuMSIsImV4cCI6MTU3NzExNTM3MX0.mWwvYJ2UgYQWzO4cHOcAwwEsMYYr5WWxedHIUb9FIJo"
 					}
 				],
 				"url": {
-					"raw": "127.0.0.1:5000/users?search_param=gmail",
+					"raw": "127.0.0.1:5000/users?search_param=hotmail",
 					"host": [
 						"127",
 						"0",
@@ -232,7 +232,7 @@
 					"query": [
 						{
 							"key": "search_param",
-							"value": "gmail"
+							"value": "hotmail"
 						}
 					]
 				}
@@ -257,7 +257,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVsaGFuYXJpbmMiLCJlbWFpbCI6ImVsaGFuYXJpbmNAZ21haWwuY29tIiwidHNfcmVnaXN0cmF0aW9uIjoxNTc2OTIyOTAzLCJsYXN0X2xvZ2luX2lwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTc3MDEyNjg4fQ.ntKkCoOg0g8AtogoUF680DAG0tHIRlmAMhyR6RH_Jfc"
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVsaGFuYXJpbmMiLCJlbWFpbCI6ImVsaGFuYXJpbmNAZ21haWwuY29tIiwibmFtZSI6IkFyaW5jIiwic3VybmFtZSI6IkVsaGFuIiwiYWdlIjoyNywidHNfcmVnaXN0cmF0aW9uIjoxNTc3MDI4OTIzLCJsYXN0X2xvZ2luX2lwIjoiMTkyLjE2OC4xNDQuMSIsImV4cCI6MTU3NzExNTM3MX0.mWwvYJ2UgYQWzO4cHOcAwwEsMYYr5WWxedHIUb9FIJo"
 					}
 				],
 				"url": {
@@ -294,7 +294,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVsaGFuYXJpbmMiLCJlbWFpbCI6ImVsaGFuYXJpbmNAaG90bWFpbC5jb20iLCJuYW1lIjoiYXJpbmNvIiwic3VybmFtZSI6ImVsaGFub3ciLCJhZ2UiOjI2LCJ0c19yZWdpc3RyYXRpb24iOjE1NzY5Mjk1ODksImxhc3RfbG9naW5faXAiOiIxMjcuMC4wLjEiLCJleHAiOjE1NzcwMTY2Mjl9.hZCDigVwmdqlAuY8lrdPSgs6_qra1L4Lv3MMPdM0jwQ"
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVsaGFuYXJpbmMiLCJlbWFpbCI6ImVsaGFuYXJpbmNAZ21haWwuY29tIiwibmFtZSI6IkFyaW5jIiwic3VybmFtZSI6IkVsaGFuIiwiYWdlIjoyNywidHNfcmVnaXN0cmF0aW9uIjoxNTc3MDI4OTIzLCJsYXN0X2xvZ2luX2lwIjoiMTkyLjE2OC4xNDQuMSIsImV4cCI6MTU3NzExNTM3MX0.mWwvYJ2UgYQWzO4cHOcAwwEsMYYr5WWxedHIUb9FIJo"
 					}
 				],
 				"url": {
@@ -331,12 +331,12 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFyaW5jZWxoYW4iLCJlbWFpbCI6ImVsaGFuYXJpbmNAZ21haWwuY29tIiwibmFtZSI6ImFyaW5jIiwic3VybmFtZSI6ImVsaGFuIiwiYWdlIjoyNywidHNfcmVnaXN0cmF0aW9uIjoxNTc2OTMzOTczLCJsYXN0X2xvZ2luX2lwIjoiMTkyLjE2OC4zMi4xIiwiZXhwIjoxNTc3MDIwNDQ5fQ.r_8zv-j0S2jmcTu5sGUjsEnuHEq1CYBBju08ZWybpY4"
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVsaGFuYXJpbmMiLCJlbWFpbCI6ImVsaGFuYXJpbmNAZ21haWwuY29tIiwibmFtZSI6IkFyaW5jIiwic3VybmFtZSI6IkVsaGFuIiwiYWdlIjoyNywidHNfcmVnaXN0cmF0aW9uIjoxNTc3MDI4OTIzLCJsYXN0X2xvZ2luX2lwIjoiMTkyLjE2OC4xNDQuMSIsImV4cCI6MTU3NzExNTM3MX0.mWwvYJ2UgYQWzO4cHOcAwwEsMYYr5WWxedHIUb9FIJo"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"erinc\",\n\t\"age\": 14\n}"
+					"raw": "{\n\t\"name\": \"erinc\",\n\t\"age\": 16,\n\t\"surname\": \"arslan\"\n}"
 				},
 				"url": {
 					"raw": "127.0.0.1:5000/update",

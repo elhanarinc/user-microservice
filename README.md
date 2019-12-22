@@ -113,9 +113,23 @@ There are different endpoints for this API:
   - `Authorization` token should be on the request header.
   - User can search through on `email` or `username` fields by using
     **search_param** query parameter.
-  - **searchparam** could be `NULL`.
+  - **search_param** can be `NULL`.
   - Ex:
   ```
         127.0.0.1:5000/users?search_param=johndoe
         127.0.0.1:5000/users
   ```
+
+### Test Scenarios
+
+**login** and **register** test scenarios has been covered. In order to run tests, commands below could be used:
+
+```
+cd <this directory>
+cd api
+virtualenv be-venv -p python3
+source be-venv/bin/activate
+pip install -r requirements.txt
+cd src
+python -m unittest discover
+```

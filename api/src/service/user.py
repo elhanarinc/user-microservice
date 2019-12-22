@@ -10,13 +10,16 @@ from src.errors.custom_error import CustomError
 from src.util.jwt import encode
 
 
-def register(user):
+def register(user, repo=None):
     try:
-        user.ts_registration = time()
-        user.ts_last_login = time()
+        user.ts_registration = int(time())
+        user.ts_last_login = int(time())
         user.password = encrypt(user.password)
 
-        repo_insert(user)
+        if repo is None:
+            repo_insert(user)
+        else:
+            repo.insert(user)
     except IntegrityError as e:
         raise CustomError(
             message="Email or username has already been used.",
@@ -28,8 +31,11 @@ def register(user):
     return encode(user.jwt_payload(), current_app.config["JWT_SECRET"], current_app.config["JWT_TTL"])
 
 
-def login(email, password, last_login_ip):
-    user = repo_find_by_email(email)
+def login(email, password, last_login_ip, repo=None):
+    if repo is None:
+        user = repo_find_by_email(email)
+    else:
+        user = repo.find_by_email(email)
 
     if user is None or not check(password, user.password):
         raise CustomError(
@@ -39,7 +45,10 @@ def login(email, password, last_login_ip):
 
     user.last_login_ip = last_login_ip
 
-    repo_update_last_login_data(user, int(time()))
+    if repo is None:
+        repo_update_last_login_data(user, int(time()))
+    else:
+        repo.update_last_login_data(user, int(time()))
 
     current_app.logger.debug("User with email %s logged in" % user.email)
 
